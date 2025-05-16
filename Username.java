@@ -2,18 +2,19 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 class Username {
-    
+
     static void Add(int n) {
-        for (int i = 0; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             l.add(sc.next());
         }
     }
-    static  Scanner sc = new Scanner(System.in);
+
+    static Scanner sc = new Scanner(System.in);
     static ArrayList<String> l = new ArrayList<>();
+
     public static void main(String[] args) {
-        
+
         while (true) {
             System.out.println("Grocery List");
             System.out.println("**************************************");
@@ -32,7 +33,7 @@ class Username {
                 case 2:
                     System.out.println("Items in list are");
                     for (int i = 0; i < l.size(); i++) {
-                        System.out.println(l.get(i));
+                        System.out.println(i + ". " + l.get(i));
                     }
                     break;
                 case 3:
@@ -43,9 +44,9 @@ class Username {
                 case 4:
                     System.out.println("<<<<<<<<<<<<<<<<---Exit--->>>>>>>>>>>>>>");
                     System.exit(0);
-                      
+
             }
         }
-        
+
     }
 }
